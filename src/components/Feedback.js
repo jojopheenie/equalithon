@@ -130,18 +130,18 @@ const Feedback = () => {
             <form className="row justify-content-end align-self-center">
                 <div className="row w-100 justify-content-center">
                     {
-                        formSubmitted ? (
-                            <div className="alert alert-danger" role="alert">
-                                Whoops! Something went wrong.
-                            </div>)
-                            : null
+                        formSubmitted ?
+                        ( <div className="alert alert-success" role="alert">
+                        Thank you. We apprieciate your feedback.
+                    </div>
+                ) : null
                     }
                     {
-                        formError ? (
-                            <div className="alert alert-success" role="alert">
-                                Thank you. We apprieciate your feedback.
-                            </div>
-                        ) : null
+                        formError ? 
+                        (
+                            <div className="alert alert-danger" role="alert">
+                                Whoops! Something went wrong.
+                            </div>) : null
                     }
 
                     <div className="dropdown w-100">
