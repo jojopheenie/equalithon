@@ -4,14 +4,6 @@ import {Row, Col, Form, Button, Container} from 'react-bootstrap';
 import {Redirect} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-// signin Email id and password and a button
-//we capture userid and passwrd a user enters
-//We retrive the json list of registration data
-// user input we compare against registered list of data
-// if
-
-
 const SignIn = props => {
     const [ data, setData ] = useState({
         pemail: "",
